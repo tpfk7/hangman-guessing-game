@@ -54,7 +54,9 @@ def start_game():
         print(f"Word: {partial_solution}")
         guess = input("Your guess: ").upper()
         if validate_letter(guess):
-            pass
+            for i, x in enumerate(mystery_word):
+                if x == guess:
+                    partial_solution = partial_solution[:i] + guess + partial_solution[i+1:]
         clear()
         if guess in mystery_word:
             pass
