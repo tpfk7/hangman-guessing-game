@@ -49,7 +49,7 @@ def start_game():
     mystery_word = get_mystery_word()
     partial_solution = "_" * len(mystery_word)
 
-    while len(wrong_guesses) < len(gallows) - 1:
+    while len(wrong_guesses) < len(gallows) - 1 and partial_solution != mystery_word:
         print(mystery_word)  # TODO: test only
         print(f"Word: {partial_solution}")
         guess = input("Your guess: ").upper()
@@ -65,6 +65,11 @@ def start_game():
                 wrong_guesses.append(guess)
         print(gallows[len(wrong_guesses)])
         print(f"Word: {partial_solution}, Wrong guesses: {','.join(wrong_guesses)}")
+
+    if mystery_word == partial_solution:
+        print("You have won.")
+    else:
+        print(f"You have lost. The word was: {mystery_word}")
 
 
 if __name__ == "__main__":
