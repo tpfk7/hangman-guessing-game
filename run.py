@@ -3,6 +3,21 @@ import random
 from data import GALLOWS as gallows
 
 
+def intro():
+    print("Welcome to hangman! If you would like to read instructions press 2, if you are good to go press 1 to start")
+    x = (input('Select 1 or 2: '))
+    if x == 1:
+        start_game()
+    elif x == 2:
+        pass
+    else:
+        print("Sorry you didn't enter a valid input, please enter 1 or 2")
+
+
+
+
+
+
 def clear():
     """
     Clear function to clean-up the terminal so things don't get messy.
@@ -44,10 +59,13 @@ def start_game():
         if guess in mystery_word:
             pass
         else:
-            wrong_guesses.append(guess)
+            if guess not in wrong_guesses:
+                wrong_guesses.append(guess)
         print(gallows[len(wrong_guesses)])
+        print(f"Word: {partial_solution}, Wrong guesses: {','.join(wrong_guesses)}")
 
 
 if __name__ == "__main__":
     clear()
+    # intro()
     start_game()
