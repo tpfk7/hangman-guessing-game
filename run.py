@@ -4,14 +4,10 @@ from data import GALLOWS as gallows
 
 
 def intro():
-    print("Welcome to hangman! If you would like to read instructions press 2, if you are good to go press 1 to start")
-    x = (input('Select 1 or 2: '))
-    if x == 1:
-        start_game()
-    elif x == 2:
-        pass
-    else:
-        print("Sorry you didn't enter a valid input, please enter 1 or 2")
+    x = (input("Choose 1 to start, 2 for instructions: "))
+    while x != (1,2):
+        print("Please enter a valid input")
+        break
 
 
 
@@ -74,5 +70,5 @@ def start_game():
 
 if __name__ == "__main__":
     clear()
-    # intro()
-    start_game()
+    intro()
+    # start_game()
