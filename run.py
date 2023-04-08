@@ -2,15 +2,17 @@ import os
 import random
 from data import GALLOWS as gallows
 
-
 def intro():
-    x = (input("Choose 1 to start, 2 for instructions: "))
-    while x != (1,2):
-        print("Please enter a valid input")
-        break
-
-
-
+    while True:
+        user_input = input("Press 1 to start game, 2 for instructions: ")
+        if user_input == '1':
+            start_game()
+            break
+        elif user_input == '2':
+            instructions()
+            break
+        else:
+            print("Please enter a valid input.")
 
 
 
@@ -71,4 +73,4 @@ def start_game():
 if __name__ == "__main__":
     clear()
     intro()
-    # start_game()
+    start_game()
