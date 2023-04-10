@@ -15,6 +15,19 @@ def intro():
             print("Please enter a valid input.")
 
 
+def instructions():
+    print("Try and guess the word one letter at a time. Every mistake will add an extra piece of the man to the gallows.")
+    while True:
+        user_input = input("Press 1 to start game: ")
+        if user_input == '1':
+            start_game()
+            break
+        else:
+            print("Please enter a valid input.")
+
+
+
+
 
 def clear():
     """
