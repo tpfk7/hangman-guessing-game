@@ -26,9 +26,6 @@ def instructions():
             print("Please enter a valid input.")
 
 
-
-
-
 def clear():
     """
     Clear function to clean-up the terminal so things don't get messy.
@@ -79,8 +76,25 @@ def start_game():
 
     if mystery_word == partial_solution:
         print("You have won.")
+    while True:
+        user_input = input("Press 1 to play again: ")
+        if user_input == '1':
+            clear()
+            start_game()
+            break
+        else:
+            print("Please enter a valid input.")
     else:
         print(f"You have lost. The word was: {mystery_word}")
+    while True:
+        user_input = input("Press 1 to play again: ")
+        if user_input == '1':
+            clear()
+            start_game()
+            break
+        else:
+            print("Please enter a valid input.")
+
 
 
 if __name__ == "__main__":
