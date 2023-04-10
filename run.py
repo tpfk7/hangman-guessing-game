@@ -33,7 +33,7 @@ def clear():
     os.system("cls" if os.name == "nt" else "clear")
 
 
-mystery_words = ["TIGER", "SHARK", "LION"]
+mystery_words = ["TIGER", "SHARK", "LION", "CHAIR", "BEACH", "HOUSE", "BIRD", "WEATHER", "WINDOW","APPLE","ORANGE", "HORSE", "CARDS", "CASTLE", "TRUCK"]
 mystery_word = ""
 wrong_guesses = []
 
