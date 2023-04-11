@@ -1,6 +1,6 @@
 import os
 import random
-from data import GALLOWS as gallows
+from gallows import GALLOWS as gallows
 
 
 def intro():
@@ -50,7 +50,6 @@ mystery_words = [
     "CARDS", "CASTLE", "TRUCK"
 ]
 mystery_word = ""
-wrong_guesses = []
 
 
 def get_mystery_word():
