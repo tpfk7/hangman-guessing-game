@@ -1,6 +1,7 @@
 import os
 import random
 from gallows import GALLOWS as gallows
+from words import WORDS as mystery_words
 
 
 def intro():
@@ -44,11 +45,6 @@ def clear():
     os.system("cls" if os.name == "nt" else "clear")
 
 
-mystery_words = [
-    "TIGER", "SHARK", "LION", "CHAIR", "BEACH", "HOUSE",
-    "BIRD", "WEATHER", "WINDOW", "APPLE", "ORANGE", "HORSE",
-    "CARDS", "CASTLE", "TRUCK"
-]
 mystery_word = ""
 
 

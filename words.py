@@ -1,0 +1,5 @@
+WORDS = [
+    "TIGER", "SHARK", "LION", "CHAIR", "BEACH", "HOUSE",
+    "BIRD", "WEATHER", "WINDOW", "APPLE", "ORANGE", "HORSE",
+    "CARDS", "CASTLE", "TRUCK"
+]
