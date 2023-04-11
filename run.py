@@ -3,6 +3,9 @@ import random
 from data import GALLOWS as gallows
 
 def intro():
+    """
+    Function to allow user to start game or read instructions.
+    """
     while True:
         user_input = input("Press 1 to start game, 2 for instructions: ")
         if user_input == '1':
@@ -16,7 +19,10 @@ def intro():
 
 
 def instructions():
-    print("Try and guess the word one letter at a time. Every mistake will add an extra piece of the man to the gallows.")
+    """
+    Function to explain to user how play game and how to start game.
+    """
+    print("Try and guess the word one letter at a time.\n Every mistake will add an extra piece of the man to the gallows.")
     while True:
         user_input = input("Press 1 to start game: ")
         if user_input == '1':
@@ -39,11 +45,17 @@ wrong_guesses = []
 
 
 def get_mystery_word():
+    """
+    Function to choose a random mystery word.
+    """
     mystery_word = random.choice(mystery_words)
     return mystery_word
 
 
 def validate_letter(guess):
+    """
+    Function to ensure user enters a valide input.
+    """
     if not guess.isalpha() or len(guess) != 1:
         print(f"\n{guess} is not valid. Please enter a letter.")
         guess = input("Your guess: ").upper()
@@ -53,13 +65,15 @@ def validate_letter(guess):
 
 
 def start_game():
+    """
+    Function to run the game until the user has won or lost.
+    """
     print(gallows[len(wrong_guesses)])
     mystery_word = get_mystery_word()
     partial_solution = "_" * len(mystery_word)
-
     while len(wrong_guesses) < len(gallows) - 1 and partial_solution != mystery_word:
         print(mystery_word)  # TODO: test only
-        print(f"Word: {partial_solution}")
+        # print(f"Word: {partial_solution}")
         guess = input("Your guess: ").upper()
         if validate_letter(guess):
             for i, x in enumerate(mystery_word):
