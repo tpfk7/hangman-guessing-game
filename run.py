@@ -2,6 +2,7 @@ import os
 import random
 from data import GALLOWS as gallows
 
+
 def intro():
     """
     Function to allow user to start game or read instructions.
@@ -22,7 +23,8 @@ def instructions():
     """
     Function to explain to user how play game and how to start game.
     """
-    print("Try and guess the word one letter at a time.\n Every mistake will add an extra piece of the man to the gallows.")
+    print("Try and guess the word one letter at a time.")
+    print("Every mistake will add an extra piece of the man to the gallows.")
     while True:
         user_input = input("Press 1 to start game: ")
         if user_input == '1':
@@ -39,7 +41,11 @@ def clear():
     os.system("cls" if os.name == "nt" else "clear")
 
 
-mystery_words = ["TIGER", "SHARK", "LION", "CHAIR", "BEACH", "HOUSE", "BIRD", "WEATHER", "WINDOW","APPLE","ORANGE", "HORSE", "CARDS", "CASTLE", "TRUCK"]
+mystery_words = [
+    "TIGER", "SHARK", "LION", "CHAIR", "BEACH", "HOUSE",
+    "BIRD", "WEATHER", "WINDOW", "APPLE", "ORANGE", "HORSE",
+    "CARDS", "CASTLE", "TRUCK"
+]
 mystery_word = ""
 wrong_guesses = []
 
@@ -71,14 +77,14 @@ def start_game():
     print(gallows[len(wrong_guesses)])
     mystery_word = get_mystery_word()
     partial_solution = "_" * len(mystery_word)
-    while len(wrong_guesses) < len(gallows) - 1 and partial_solution != mystery_word:
+    while len(wrong_guesses) < len(gallows) - 1 and partial_solution != mystery_word:  # noqa
         print(mystery_word)  # TODO: test only
         # print(f"Word: {partial_solution}")
         guess = input("Your guess: ").upper()
         if validate_letter(guess):
             for i, x in enumerate(mystery_word):
                 if x == guess:
-                    partial_solution = partial_solution[:i] + guess + partial_solution[i+1:]
+                    partial_solution = partial_solution[:i] + guess + partial_solution[i+1:]  # noqa
         clear()
         if guess in mystery_word:
             pass
@@ -86,7 +92,10 @@ def start_game():
             if guess not in wrong_guesses:
                 wrong_guesses.append(guess)
         print(gallows[len(wrong_guesses)])
-        print(f"Word: {partial_solution}, Wrong guesses: {','.join(wrong_guesses)}")
+        print(
+            f"Word: {partial_solution}, "
+            f"Wrong guesses: {','.join(wrong_guesses)}"
+        )
 
     if mystery_word == partial_solution:
         print("You have won.")
@@ -95,9 +104,6 @@ def start_game():
     intro()
 
 
-
-
 if __name__ == "__main__":
     clear()
     intro()
-
