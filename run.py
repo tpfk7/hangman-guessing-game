@@ -90,28 +90,14 @@ def start_game():
 
     if mystery_word == partial_solution:
         print("You have won.")
-    while True:
-        user_input = input("Press 1 to play again: ")
-        if user_input == '1':
-            clear()
-            start_game()
-            break
-        else:
-            print("Please enter a valid input.")
     else:
         print(f"You have lost. The word was: {mystery_word}")
-    while True:
-        user_input = input("Press 1 to play again: ")
-        if user_input == '1':
-            clear()
-            start_game()
-            break
-        else:
-            print("Please enter a valid input.")
+    intro()
+
 
 
 
 if __name__ == "__main__":
     clear()
     intro()
-    start_game()
+
