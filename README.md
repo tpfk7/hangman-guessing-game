@@ -1,14 +1,10 @@
 # HANGMAN GUESSING GAME
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+The Hangman Guessing Game is a game where the user tries to guess a hidden word one letter at a time. Each time they guess a successful letter it will appear in the terminal.
 
-In this section, you will include a few paragraphs providing an overview of your project.
-Essentially, this part is your "sales pitch".
+However if the user selects a wrong letter then a piece of the hangman will be added to the gallows. If the entire man is added to the gallows the user has lost, but if the guess the correct word before that they will win.
 
-At this stage, you should have a name for your project so use it!
-Don't introduce the project as a "portfolio project" for the diploma.
-
-In this section, describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
+Either way the user can choose to play again and try to guess another word. 
 
 Consider adding a mockup image using the "Am I Responsive" website.
 Here's your deployed site as an example:
