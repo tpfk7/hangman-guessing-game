@@ -16,13 +16,15 @@ def intro():
             instructions()
             break
         else:
-            print("Please enter a valid input.")
+            clear()
+            print(f"Please enter a valid input. {user_input} is not valid")
 
 
 def instructions():
     """
     Function to explain to user how play game and how to start game.
     """
+    clear()
     print("Try and guess the word one letter at a time.")
     print("Every mistake will add an extra piece of the man to the gallows.")
     while True:
@@ -31,7 +33,8 @@ def instructions():
             start_game()
             break
         else:
-            print("Please enter a valid input.")
+            clear()
+            print(f"Please enter a valid input. {user_input} is not valid")
 
 
 def clear():
@@ -74,6 +77,8 @@ def start_game():
     """
     Function to run the game until the user has won or lost.
     """
+    clear()
+    wrong_guesses = []
     print(gallows[len(wrong_guesses)])
     mystery_word = get_mystery_word()
     partial_solution = "_" * len(mystery_word)
@@ -86,11 +91,8 @@ def start_game():
                 if x == guess:
                     partial_solution = partial_solution[:i] + guess + partial_solution[i+1:]  # noqa
         clear()
-        if guess in mystery_word:
-            pass
-        else:
-            if guess not in wrong_guesses:
-                wrong_guesses.append(guess)
+        if guess not in mystery_word and guess not in wrong_guesses:
+            wrong_guesses.append(guess)
         print(gallows[len(wrong_guesses)])
         print(
             f"Word: {partial_solution}, "
@@ -101,6 +103,7 @@ def start_game():
         print("You have won.")
     else:
         print(f"You have lost. The word was: {mystery_word}")
+    print("")
     intro()
 
 
