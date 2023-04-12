@@ -28,23 +28,35 @@ The game has a simple hangman design. The gallows are made from characters. The 
 
 ### Existing Features
 
-- **Title for feature #1**
+- **Menu #1**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The opening screen will display a menu feature that allows the user to either choose to read instructions or to start the game
 
-![screenshot](documentation/feature01.png)
+![screenshot](documentation/feature/menu.png)
 
-- **Title for feature #2**
+- **Error message**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - If the user inputs an invalid character the game will display an error message to let them know.
 
-![screenshot](documentation/feature02.png)
+![screenshot](documentation/feature/error_message.png)
 
-- **Title for feature #3**
+- **Win message #3**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - If the user selects the correct letters they will see a win message. The user will also have the option to play again or see instructions.
 
-![screenshot](documentation/feature03.png)
+![screenshot](documentation/feature/win_message.png)
+
+- **Lose message #4**
+
+    - If the user selects the wrong letters too many times they will get a lose message.However, they will also have the option to play again.
+
+![screenshot](documentation/feature/lose_message.png)
+
+- **Wrong guess #4**
+
+    - If the user enters the wrong letter they will know as the letter will be displayed in the wrong guess section.
+
+![screenshot](documentation/feature/wrong_guess.png)
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
