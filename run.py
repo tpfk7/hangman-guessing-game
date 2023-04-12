@@ -1,7 +1,10 @@
 import os
 import random
+import colorama
+from colorama import Fore, Back
 from gallows import GALLOWS as gallows
 from words import WORDS as mystery_words
+colorama.init(autoreset=True)
 
 
 def intro():
@@ -9,7 +12,10 @@ def intro():
     Function to allow user to start game or read instructions.
     """
     while True:
-        user_input = input("Press 1 to start game, 2 for instructions: ")
+        print(Fore.GREEN + "Welcome to Hangman!\n")
+        user_input = input(
+            Fore.YELLOW + "Press 1 to start game, 2 for instructions: "
+        )
         if user_input == '1':
             start_game()
             break
@@ -18,7 +24,10 @@ def intro():
             break
         else:
             clear()
-            print(f"Please enter a valid input. {user_input} is not valid")
+            print(
+                Fore.RED + "Please enter a valid input. "
+                f"{user_input} is not valid"
+            )
 
 
 def instructions():
@@ -26,16 +35,27 @@ def instructions():
     Function to explain to user how play game and how to start game.
     """
     clear()
-    print("Try and guess the word one letter at a time.")
-    print("Every mistake will add an extra piece of the man to the gallows.")
+    print(
+        Fore.YELLOW + "Try and guess the word one letter at a time."
+    )
+    print(
+        Fore.YELLOW + "Every mistake will add an extra "
+    )
+    print(
+        Fore.YELLOW + "piece of the man to the gallows."
+    )
+    print("")
     while True:
-        user_input = input("Press 1 to start game: ")
+        user_input = input(Fore.BLUE + "Press 1 to start game: ")
         if user_input == '1':
             start_game()
             break
         else:
             clear()
-            print(f"Please enter a valid input. {user_input} is not valid")
+            print(
+                Fore.RED + "Please enter a valid input. "
+                f"{user_input} is not valid"
+            )
 
 
 def clear():
@@ -80,7 +100,7 @@ def start_game():
     while len(wrong_guesses) < len(gallows) - 1 and partial_solution != mystery_word:  # noqa
         print(mystery_word)  # TODO: test only
         # print(f"Word: {partial_solution}")
-        guess = input("Your guess: ").upper()
+        guess = input(Fore.CYAN + "Your guess: ").upper()
         if validate_letter(guess):
             for i, x in enumerate(mystery_word):
                 if x == guess:
@@ -90,14 +110,16 @@ def start_game():
             wrong_guesses.append(guess)
         print(gallows[len(wrong_guesses)])
         print(
-            f"Word: {partial_solution}, "
-            f"Wrong guesses: {','.join(wrong_guesses)}"
+            Fore.BLUE + f"Word: {partial_solution}, "
+        )
+        print(
+            Fore.RED + f"Wrong guesses: {','.join(wrong_guesses)}"
         )
 
     if mystery_word == partial_solution:
-        print("You have won.")
+        print(Fore.GREEN + "You have won.")
     else:
-        print(f"You have lost. The word was: {mystery_word}")
+        print(Fore.RED + f"You have lost. The word was: {mystery_word}")
     print("")
     intro()
 
