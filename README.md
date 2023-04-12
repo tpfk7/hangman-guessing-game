@@ -88,30 +88,21 @@ Below is the flowchart of the main process of this Python program. It shows the 
 
 The program uses classes as a blueprint for the project's objects (OOP). This allows for the object to be reusable.
 
-```python
-class Person:
-    """ Insert docstring comments here """
-    def __init__(self, name, age, health, inventory):
-        self.name = name
-        self.age = age
-        self.health = health
-        self.inventory = inventory
-```
 
 The primary functions used on this application are:
 
-- `get_sales_data()`
-    - Get sales figures input from the user.
-- `validate_data()`
-    - Converts all string values into integers.
-- `update_worksheet()`
-    - Update the relevant worksheet with the data provided.
-- `calculate_surplus_data()`
-    - Compare sales with stock and calculate the surplus for each item type.
-- `get_last_5_entries_sales()`
-    - Collects columns of data from sales worksheet.
-- `calculate_stock_data()`
-    -  Calculate the average stock for each item type, adding 10%.
+- `intro()`
+    - Shows a welcome message and options for the user.
+- `instructions()`
+    - Prints instructions for the user.
+- `clear()`
+    - Clear function to clean-up the terminal so things don't get messy.
+- `get_mystery_word()`
+    - Function to choose a random mystery word.
+- `validate_letter()`
+    - Function to ensure user enters a valide input.
+- `start_game()`
+    -  Function to run the game until the user has won or lost.
 - `main()`
     - Run all program functions.
 
