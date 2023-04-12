@@ -81,7 +81,7 @@ def validate_letter(guess):
     Function to ensure user enters a valide input.
     """
     if not guess.isalpha() or len(guess) != 1:
-        print(f"\n{guess} is not valid. Please enter a letter.")
+        print(Fore.RED + f"\n{guess} is not valid. Please enter a letter.")
         guess = input("Your guess: ").upper()
         validate_letter(guess)
         return False
