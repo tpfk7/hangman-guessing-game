@@ -98,8 +98,6 @@ def start_game():
     mystery_word = get_mystery_word()
     partial_solution = "_" * len(mystery_word)
     while len(wrong_guesses) < len(gallows) - 1 and partial_solution != mystery_word:  # noqa
-        print(mystery_word)  # TODO: test only
-        # print(f"Word: {partial_solution}")
         guess = input("Your guess: ").upper()
         if validate_letter(guess):
             for i, x in enumerate(mystery_word):
