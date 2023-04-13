@@ -67,16 +67,13 @@ Defensive programming was manually tested with the below user acceptance testing
 
 | User Story | Screenshot |
 | --- | --- |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature01.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature02.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature03.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature04.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature05.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature06.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature07.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature08.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature09.png) |
-| repeat for all remaining user stories | x |
+| As a new site user, I would like to have an option to see instructions or start the game, so that I can choose to see how to play or start right away. | ![screenshot](documentation/feature/menu.png) |
+| As a new site user, I would like to to see a clear error message, so that I can know that I entered the wrong input. | ![screenshot](documentation/feature/error_message.png) |
+| As a new site user, I would like to I would like to see the gallows, so that I can see how many mistakes I've made. | ![screenshot](documentation/feature/gallows.png) |
+| As a new site user, I would like to I would like to see wrong guesses, so that I can know which incorrect letters I have already chosen . | ![screenshot](documentation/feature/wrong_guess.png) |
+| As a new site user, I would like to see the word fill in when I guess the right letter, so that I can track my progress. | ![screenshot](documentation/feature/fill_word.png) |
+| As a new site user, I would like to I would like to see a win or lose message, so that I know if I guessed the right word or not. | ![screenshot](documentation/feature/win_message.png) |
+| As a new site user, I would like to be able to see an end screen, so that I can choose to play again or check the instructions. | ![screenshot](documentation/feature/end_screen.png) |
 
 ## Bugs
 

@@ -17,7 +17,7 @@ The game has a simple hangman design. The gallows are made from characters. The 
 ### New Site Users
 
 - As a new site user, I would like to have an option to see instructions or start the game, so that I can choose to see how to play or start right away.
-- As a new site user, I would like to see a clear error message, so that I can know that I entered the wron input.
+- As a new site user, I would like to see a clear error message, so that I can know that I entered the wrong input.
 - As a new site user, I would like to see the gallows, so that I can see how many mistakes I've made.
 - As a new site user, I would like to see wrong guesses, so that I can know which incorrect letters I have already chosen .
 - As a new site user, I would like to see the word fill in when I guess the right letter, so that I can track my progress.
