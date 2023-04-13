@@ -8,14 +8,6 @@ Return back to the [README.md](README.md) file.
 
 I have used the recommended [CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
-The CI Python Linter can be used two different ways.
-- Copy/Paste your Python code directly into the linter.
-- As an API, using the "raw" URL appended to the linter URL.
-    - To find the "raw" URL, navigate to your file directly on the GitHub repo.
-    - On that page, GitHub provides a button on the right called "Raw" that you can click on.
-    - From that new page, copy the full URL, and paste it after the CI Python Linter URL (with a `/` separator).
-    - Examples:
-
     | File | CI URL | Raw URL | Combined |
     | --- | --- | --- | --- |
     | PP3 *run.py* file | `https://pep8ci.herokuapp.com/` | `https://raw.githubusercontent.com/tpfk7/hangman-guessing-game/main/run.py` | https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tpfk7/hangman-guessing-game/main/run.py |
@@ -45,56 +37,33 @@ Defensive programming was manually tested with the below user acceptance testing
 
 | Page | User Action | Expected Result | Pass/Fail | Comments |
 | --- | --- | --- | --- | --- |
-| Home Page | | | | |
-| | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery Page | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| Contact Page | | | | |
-| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter message in textarea | Field will accept freeform text | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
-| Sign Up | | | | |
-| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password (twice) | Field will only accept password format | Pass | |
-| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
-| | Confirm email | Redirects user to blank Sign In page | Pass | |
-| Log In | | | | |
-| | Click on the Login link | Redirection to Login page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password | Field will only accept password format | Pass | |
-| | Click Login button | Redirects user to home page | Pass | |
-| Log Out | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Profile | | | | |
-| | Click on Profile button | User will be redirected to the Profile page | Pass | |
-| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
-| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+| Main Game Page | | | | |
+| | Enter inncorrect number | Invalid input message | Pass | |
+| | Enter a letter instead of a number | Invalid input message | Pass | |
+| | Hit enter without having a character | Invalid input message | Pass | |
+| | Enter an invalid character e.g question mark | Invalid input message | Pass | |
+| | Enter a word instead of correct number | Invalid input message | Pass | |
+| | Enter multiple numbers instead of one| Invalid input message | Pass | |
+| Start Game Page | | | | |
+| | Enter a number instead of letter | Invalid input message | Pass | |
+| | Hit enter instead of typing a letter | Invalid input message | Pass | |
+| | Type a word instead of a letter | Invalid input message | Pass | |
+| | Type a character instead of a letter | Invalid input message | Pass | |
+| | Type multiple letters instead of one | Invalid input message | Pass | |
+| Instruction Game Page | | | | |
+| | Enter a letter instead of a number | Invalid input message | Pass | |
+| | Hit enter instead of typing a number | Invalid input message | Pass | |
+| | Type a word instead of a number | Invalid input message | Pass | |
+| | Type a character instead of a letter | Invalid input message | Pass | |
+| | Type multiple numbers instead of one | Invalid input message | Pass | |
+| End Game Page | | | | |
+| | Enter a letter instead of a number | Invalid input message | Pass | |
+| | Hit enter instead of typing a number | Invalid input message | Pass | |
+| | Type a word instead of a number | Invalid input message | Pass | |
+| | Type a character instead of a letter | Invalid input message | Pass | |
+| | Type multiple numbers instead of one | Invalid input message | Pass | |
 
 ## User Story Testing
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Testing user stories is actually quite simple, once you've already got the stories defined on your README.
-
-Most of your project's **features** should already align with the **user stories**,
-so this should as simple as creating a table with the user story, matching with the re-used screenshot
-from the respective feature.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 | User Story | Screenshot |
 | --- | --- |
