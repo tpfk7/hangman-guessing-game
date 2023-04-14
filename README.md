@@ -58,6 +58,12 @@ The game has a simple hangman design. The gallows are made from characters. The 
 
 ![screenshot](documentation/feature/wrong_guess.png)
 
+- **Number of letters #5**
+
+    - As it is difficult to see how many letters are in the word in Heroku, the number of letters are displayed to the user.
+
+![screenshot](documentation/feature/number_letters.png)
+
 ### Future Features
 
 - Score counter #1
@@ -201,7 +207,7 @@ You can fork this repository by using the following steps:
 
 ## Credits
 
-I used a variety of YouTube tutorials to make the game. The links are linked below but the main video was https://www.youtube.com/watch?v=G0Cl_3rWmlI&ab_channel=PythonforEveryone.
+I used a variety of YouTube tutorials to make the game. The links are linked below but the main video was from [YouTube](https://www.youtube.com/watch?v=G0Cl_3rWmlI&ab_channel=PythonforEveryone).
 
 ### Content
 
