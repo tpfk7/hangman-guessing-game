@@ -95,6 +95,9 @@ def start_game():
     print(Fore.WHITE + gallows[len(wrong_guesses)])
     mystery_word = get_mystery_word()
     partial_solution = "_" * len(mystery_word)
+    print(
+        Fore.BLUE + f"Word: {partial_solution} ({len(mystery_word)} letters)"  # noqa
+    )
     while len(wrong_guesses) < len(gallows) - 1 and partial_solution != mystery_word:  # noqa
         while True:
             guess = input("Your guess: ").upper()
@@ -108,7 +111,7 @@ def start_game():
             wrong_guesses.append(guess)
         print(Fore.WHITE + gallows[len(wrong_guesses)])
         print(
-            Fore.BLUE + f"Word: {partial_solution}, "
+            Fore.BLUE + f"Word: {partial_solution} ({len(mystery_word)} letters)"  # noqa
         )
         print(
             Fore.RED + f"Wrong guesses: {','.join(wrong_guesses)}"

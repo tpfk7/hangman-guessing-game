@@ -8,17 +8,11 @@ Return back to the [README.md](README.md) file.
 
 I have used the recommended [CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
-    | File | CI URL | Raw URL | Combined |
-    | --- | --- | --- | --- |
-    | PP3 *run.py* file | `https://pep8ci.herokuapp.com/` | `https://raw.githubusercontent.com/tpfk7/hangman-guessing-game/main/run.py` | https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tpfk7/hangman-guessing-game/main/run.py |
-    | Boutique Ado *settings.py* | `https://pep8ci.herokuapp.com/` | `https://raw.githubusercontent.com/tpfk7/hangman-guessing-game/main/boutique_ado/settings.py` | https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tpfk7/hangman-guessing-game/main/boutique_ado/settings.py |
-
-
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
 | run.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tpfk7/hangman-guessing-game/main/run.py) | ![screenshot](documentation/pep8/run_py.png) | Pass: No Errors|
-| words.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tpfk7/hangman-guessing-game/main/boutique-ado/settings.py) | ![screenshot](documentation/pep8/word_list.png) | Pass: No Errors |
-| gallows.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tpfk7/hangman-guessing-game/main/blog/views.py) | ![screenshot](documentation/pep8/gallows.png) | Pass: No Errors |
+| words.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tpfk7/hangman-guessing-game/main/words.py) | ![screenshot](documentation/pep8/word_list.png) | Pass: No Errors |
+| gallows.py | [CI PEP8](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/tpfk7/hangman-guessing-game/main/gallows.py) | ![screenshot](documentation/pep8/gallows.png) | Pass: No Errors |
 
 ## Lighthouse Audit
 
