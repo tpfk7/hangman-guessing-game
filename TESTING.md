@@ -29,15 +29,15 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 Defensive programming was manually tested with the below user acceptance testing:
 
-| Page | User Action | Expected Result | Pass/Fail | Comments |
+| Page | User Action | Expected Result | Pass/Fail | Screenshot |
 | --- | --- | --- | --- | --- |
 | Main Game Page | | | | |
-| | Enter inncorrect number | Invalid input message | Pass | |
-| | Enter a letter instead of a number | Invalid input message | Pass | |
-| | Hit enter without having a character | Invalid input message | Pass | |
-| | Enter an invalid character e.g question mark | Invalid input message | Pass | |
-| | Enter a word instead of correct number | Invalid input message | Pass | |
-| | Enter multiple numbers instead of one| Invalid input message | Pass | |
+| | Enter inncorrect number | Invalid input message | Pass |![screenshot](documentation/defensive_programming/main_game_page/invalid_number.png)  |
+| | Enter a letter instead of a number | Invalid input message | Pass |![screenshot](documentation/defensive_programming/main_game_page/invalid_letter.png) |
+| | Hit enter without having a character | Invalid input message | Pass |![screenshot](documentation/defensive_programming/main_game_page/invalid_enter.png) |
+| | Enter an invalid character e.g question mark | Invalid input message | Pass |![screenshot](documentation/defensive_programming/main_game_page/invalid_character.png) |
+| | Enter a word instead of correct number | Invalid input message | Pass |![screenshot](documentation/defensive_programming/main_game_page/invalid_word.png) |
+| | Enter multiple numbers instead of one| Invalid input message | Pass |![screenshot](documentation/defensive_programming/main_game_page/invalid_numbers.png) |
 | Start Game Page | | | | |
 | | Enter a number instead of letter | Invalid input message | Pass | |
 | | Hit enter instead of typing a letter | Invalid input message | Pass | |
@@ -75,13 +75,13 @@ Defensive programming was manually tested with the below user acceptance testing
 
     ![screenshot](documentation/bugs/gallows_bug.png)
 
-    - To fix this, I _____________________.
+    - To fix this, I added another `Fore.WHITE` before the gallows.
 
 - Incorrect numbers and characters are listed in wrong guesse.
 
     ![screenshot](documentation/bugs/wrong_input_bug.png)
 
-    - To fix this, I _____________________.
+    - To fix this, I removed the recursive loop and replaced with an internal while loop.
 
 ## Unfixed Bugs
 
