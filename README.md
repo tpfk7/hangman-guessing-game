@@ -68,7 +68,6 @@ The game has a simple hangman design. The gallows are made from characters. The 
 - [Python](https://www.python.org) used as the back-end programming language.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
-- [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
 
@@ -170,8 +169,6 @@ This project can be cloned or forked in order to make a local copy on your own s
 
 For either method, you will need to install any applicable packages found within the *requirements.txt* file.
 - `pip3 install -r requirements.txt`.
-
-If using any confidential credentials, such as `CREDS.json` or `env.py` data, these will need to be manually added to your own newly created project as well.
 
 #### Cloning
 
