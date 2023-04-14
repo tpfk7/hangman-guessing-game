@@ -39,23 +39,23 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Enter a word instead of correct number | Invalid input message | Pass |![screenshot](documentation/defensive_programming/main_game_page/invalid_word.png) |
 | | Enter multiple numbers instead of one| Invalid input message | Pass |![screenshot](documentation/defensive_programming/main_game_page/invalid_numbers.png) |
 | Start Game Page | | | | |
-| | Enter a number instead of letter | Invalid input message | Pass | |
-| | Hit enter instead of typing a letter | Invalid input message | Pass | |
-| | Type a word instead of a letter | Invalid input message | Pass | |
-| | Type a character instead of a letter | Invalid input message | Pass | |
-| | Type multiple letters instead of one | Invalid input message | Pass | |
+| | Enter a number instead of letter | Invalid input message | Pass |![screenshot](documentation/defensive_programming/start_game_page/sg_number.png) |
+| | Hit enter instead of typing a letter | Invalid input message | Pass |![screenshot](documentation/defensive_programming/start_game_page/sg_enter.png) |
+| | Type a word instead of a letter | Invalid input message | Pass |![screenshot](documentation/defensive_programming/start_game_page/sg_word.png) |
+| | Type a character instead of a letter | Invalid input message | Pass |![screenshot](documentation/defensive_programming/start_game_page/sg_character.png) |
+| | Type multiple numbers instead of one | Invalid input message | Pass |![screenshot](documentation/defensive_programming/start_game_page/sg_number.png) |
 | Instruction Game Page | | | | |
-| | Enter a letter instead of a number | Invalid input message | Pass | |
-| | Hit enter instead of typing a number | Invalid input message | Pass | |
-| | Type a word instead of a number | Invalid input message | Pass | |
-| | Type a character instead of a letter | Invalid input message | Pass | |
-| | Type multiple numbers instead of one | Invalid input message | Pass | |
+| | Enter a letter instead of a number | Invalid input message | Pass |![screenshot](documentation/defensive_programming/instructions_page/inst_letter.png) |
+| | Hit enter instead of typing a number | Invalid input message | Pass |![screenshot](documentation/defensive_programming/instructions_page/inst_enter.png) |
+| | Type a word instead of a number | Invalid input message | Pass |![screenshot](documentation/defensive_programming/instructions_page/inst_word.png) |
+| | Type a character instead of a letter | Invalid input message | Pass |![screenshot](documentation/defensive_programming/instructions_page/inst_character.png) |
+| | Type multiple numbers instead of one | Invalid input message | Pass |![screenshot](documentation/defensive_programming/instructions_page/inst_numbers.png) |
 | End Game Page | | | | |
-| | Enter a letter instead of a number | Invalid input message | Pass | |
-| | Hit enter instead of typing a number | Invalid input message | Pass | |
-| | Type a word instead of a number | Invalid input message | Pass | |
-| | Type a character instead of a letter | Invalid input message | Pass | |
-| | Type multiple numbers instead of one | Invalid input message | Pass | |
+| | Enter a letter instead of a number | Invalid input message | Pass |![screenshot](documentation/defensive_programming/main_game_page/invalid_letter.png) |
+| | Hit enter instead of typing a number | Invalid input message | Pass |![screenshot](documentation/defensive_programming/main_game_page/invalid_enter.png) |
+| | Type a word instead of a number | Invalid input message | Pass |![screenshot](documentation/defensive_programming/main_game_page/invalid_word.png) |
+| | Type a character instead of a letter | Invalid input message | Pass |![screenshot](documentation/defensive_programming/main_game_page/invalid_character.png) |
+| | Type multiple numbers instead of one | Invalid input message | Pass |![screenshot](documentation/defensive_programming/main_game_page/invalid_numbers.png) |
 
 ## User Story Testing
 
