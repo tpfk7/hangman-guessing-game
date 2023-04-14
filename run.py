@@ -82,8 +82,6 @@ def validate_letter(guess):
     """
     if not guess.isalpha() or len(guess) != 1:
         print(Fore.RED + f"\n{guess} is not valid. Please enter a letter.")
-        guess = input("Your guess: ").upper()
-        validate_letter(guess)
         return False
     return True
 
@@ -94,19 +92,21 @@ def start_game():
     """
     clear()
     wrong_guesses = []
-    print(gallows[len(wrong_guesses)])
+    print(Fore.WHITE + gallows[len(wrong_guesses)])
     mystery_word = get_mystery_word()
     partial_solution = "_" * len(mystery_word)
     while len(wrong_guesses) < len(gallows) - 1 and partial_solution != mystery_word:  # noqa
-        guess = input("Your guess: ").upper()
-        if validate_letter(guess):
-            for i, x in enumerate(mystery_word):
-                if x == guess:
-                    partial_solution = partial_solution[:i] + guess + partial_solution[i+1:]  # noqa
+        while True:
+            guess = input("Your guess: ").upper()
+            if validate_letter(guess):
+                for i, x in enumerate(mystery_word):
+                    if x == guess:
+                        partial_solution = partial_solution[:i] + guess + partial_solution[i+1:]  # noqa
+                break
         clear()
         if guess not in mystery_word and guess not in wrong_guesses:
             wrong_guesses.append(guess)
-        print(gallows[len(wrong_guesses)])
+        print(Fore.WHITE + gallows[len(wrong_guesses)])
         print(
             Fore.BLUE + f"Word: {partial_solution}, "
         )
